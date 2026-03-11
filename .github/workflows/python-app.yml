@@ -29,3 +29,6 @@ jobs:
       - name: Run application help check
         run: |
           python main.py --help
+
+      - name: Build Docker image
+        run: docker build -t qr-code-generator-app .
